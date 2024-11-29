@@ -8,7 +8,7 @@ package modelo;
  *
  * @author Asus
  */
-public class FigurasGeo {
+public abstract class FigurasGeo {
     
     private String nombre;
     private double area;
@@ -62,8 +62,11 @@ public class FigurasGeo {
         return "FigurasGeo{" + "nombre=" + nombre + ", area=" + area + ", perimetro=" + perimetro + '}';
     }
 
-   
+   // METODOS abtractos
     
+    
+    abstract double calcularArea();
+    abstract double calcularP();
 
     
 }
